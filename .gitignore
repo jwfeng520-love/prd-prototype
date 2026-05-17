@@ -1,0 +1,11 @@
+/*
+!/standalone-skills
+!/.claude
+!/.claude/skills
+!/CLAUDE.md
+!/.gitignore
+.claude/memory
+.claude/plans
+.claude/settings.json
+.claude/settings.local.json
+*.rar
