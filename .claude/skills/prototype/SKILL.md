@@ -1,6 +1,6 @@
 ---
 name: prototype
-description: 生成交互式 HTML 原型（单文件，双击可打开）
+description: 从功能描述生成高保真交互式 HTML 原型（单/多文件，CSS/JS 内联，双击可开）
 allowed-tools:
   - Read
   - Write
@@ -12,7 +12,7 @@ disable-model-invocation: true
 # /prototype — 生成交互原型
 
 ## 描述
-从功能描述生成单文件交互式 HTML 原型（CSS/JS 内联），双击即可在浏览器中打开，无需构建工具。
+从功能描述生成单或多页面文件交互式 HTML 可商用的高保真原型（CSS/JS 内联），双击即可在浏览器中打开，无需构建工具。
 
 ## 输入
 用户应提供（缺失项生成前提问）：
@@ -84,6 +84,7 @@ disable-model-invocation: true
 - ❌ 硬边框或轮廓线
 - ❌ 密集杂乱的布局
 - ❌ 非标准导航模式
+- ❌ 不要把产品实现逻辑描述呈现在原型
 
 ### 决策规则
 - 不要过度设计。感觉不必要就移除
