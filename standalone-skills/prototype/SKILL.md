@@ -152,27 +152,51 @@
 ### 设计 Token（CSS 变量）
 ```css
 :root {
-  --color-primary: #4A6CF7;
+  /* 主要色彩 */
+  --color-primary: #4A6CF7;           /* 可保留蓝色主色，或根据需求改成低饱和灰蓝 */
   --color-primary-light: #6B8AFF;
   --color-primary-lighter: #EEF2FF;
+
   --color-success: #34C759;
   --color-warning: #FFB800;
   --color-danger: #FF4757;
-  --color-bg: #F5F6FA;
-  --color-surface: #FFFFFF;
-  --color-border: #F0F0F5;
-  --color-text-primary: #1A1A2E;
-  --color-text-secondary: #6B7280;
-  --color-text-tertiary: #9CA3AF;
+
+  /* 背景与表面层级 */
+  --color-bg: #0F1115;                 /* 高级灰深色背景 */
+  --color-surface: #14171C;            /* 卡片、模态背景 */
+  --color-border: #2A2D34;             /* 边框灰色 */
+  
+  /* 文字色彩层级 */
+  --color-text-primary: #E5E7EB;       /* 主文字，浅灰白 */
+  --color-text-secondary: #A1A6B0;     /* 次文字，灰色 */
+  --color-text-tertiary: #6B7280;      /* 三文字，暗灰 */
+
+  /* 尺寸与响应式 */
   --phone-width: 375px;
-  --card-radius: 14px;
-  --shadow-card: 0 2px 12px rgba(0,0,0,0.06);
-  --shadow-modal: 0 8px 40px rgba(0,0,0,0.12);
-  --font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', 'Segoe UI', Roboto, sans-serif;
+  --tablet-width: 768px;
+  --desktop-width: 1440px;
   --tabbar-height: 56px;
   --navbar-height: 52px;
+
+  /* 圆角 */
+  --card-radius: 14px;
+  --border-radius-button: 12px;
+  --border-radius-input: 10px;
+  --border-radius-modal: 16px;
+
+  /* 阴影与浮层 */
+  --shadow-card: 0 2px 12px rgba(0,0,0,0.06);
+  --shadow-modal: 0 8px 40px rgba(0,0,0,0.12);
+  --shadow-tooltip: 0 4px 16px rgba(0,0,0,0.08);
+
+  /* 字体 */
+  --font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', 'Segoe UI', Roboto, sans-serif;
+
+  /* 过渡动画 */
   --transition-fast: .2s ease;
   --transition-normal: .3s ease;
+  --transition-slow: .5s ease;
+  --transition-ease-in-out: cubic-bezier(0.4,0,0.2,1);
 }
 ```
 
